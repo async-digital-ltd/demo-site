@@ -45,8 +45,6 @@ body {
 .header {
   padding: 48px 0 56px;
   text-align: center;
-  background:
-    radial-gradient(ellipse 80% 60% at 50% 0%, var(--glow), transparent 70%);
 }
 
 .brand {
