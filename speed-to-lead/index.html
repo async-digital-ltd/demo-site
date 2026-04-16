@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Speed to Lead — Async Digital Demo</title>
+  <meta name="description" content="See how Async Digital's Speed to Lead system turns missed calls into booked appointments — automatically." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="wrap">
+      <div class="brand">
+        <img class="logo" src="Logo.jpg" alt="Async Digital" />
+      </div>
+
+      <h1 class="headline">You just saw what your patients see.</h1>
+      <p class="subtitle">A missed call. An instant follow-up. A booking — all within seconds.</p>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Flow -->
+    <section class="flow-section" aria-labelledby="flow-title">
+      <div class="wrap">
+        <h2 id="flow-title" class="section-label">What just happened</h2>
+
+        <div class="flow">
+          <div class="flow-step">
+            <div class="flow-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94"/>
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <h3 class="flow-title">Call missed</h3>
+            <p class="flow-desc">Your phone rang. Nobody picked up.</p>
+          </div>
+
+          <div class="flow-connector" aria-hidden="true">
+            <div class="connector-line"></div>
+            <div class="connector-dot"></div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <h3 class="flow-title">SMS sent</h3>
+            <p class="flow-desc">Within seconds, the caller received a branded text with a booking link.</p>
+          </div>
+
+          <div class="flow-connector" aria-hidden="true">
+            <div class="connector-line"></div>
+            <div class="connector-dot"></div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+                <path d="M9 16l2 2 4-4"/>
+              </svg>
+            </div>
+            <h3 class="flow-title">Appointment booked</h3>
+            <p class="flow-desc">One tap. Slot chosen. Booking confirmed. No receptionist needed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why it matters -->
+    <section class="cards-section" aria-labelledby="why-title">
+      <div class="wrap">
+        <h2 id="why-title" class="section-label">Why it matters</h2>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Every missed call is a lost patient</h3>
+            <p>Callers don't leave voicemails. They Google the next clinic. Speed to Lead catches them before they move on.</p>
+          </article>
+
+          <article class="card">
+            <h3>Zero effort from your team</h3>
+            <p>No app to check. No voicemail to chase. The system runs in the background — your staff focus on patients in the chair.</p>
+          </article>
+
+          <article class="card">
+            <h3>See exactly what you're missing</h3>
+            <p>Know how many calls went unanswered, how many were recovered, and how much revenue you're protecting.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="wrap">
+        <h2 id="cta-title" class="cta-headline">Ready to stop losing patients?</h2>
+        <div class="cta-buttons">
+          <a class="btn btn-primary" href="mailto:r.nash1@async-digital.com">Get in touch</a>
+          <a class="btn btn-outline" href="https://async-digital.com">Back to Async Digital</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="wrap">
+      <span>© <span id="year"></span> Async Digital · Company No. 16950485 · Cardiff, UK</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
