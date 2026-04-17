@@ -60,6 +60,17 @@
       padding-bottom: 1px;
     }
     .back a:hover { border-bottom-color: rgba(0,0,0,0.18); }
+    .legal {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 12px 16px;
+      text-align: center;
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
   </style>
 </head>
 <body>
@@ -71,5 +82,11 @@
     </ul>
     <div class="back"><a href="https://async-digital.com">← async-digital.com</a></div>
   </div>
+  <div class="legal" role="contentinfo">
+    &copy; <span id="year"></span> Async Digital Ltd &middot; Registered in England &amp; Wales, Co. No. 16950485 &middot; Registered office: 167&ndash;169 Great Portland Street, London, W1W 5PF
+  </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
