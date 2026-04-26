@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Async Digital — Demos</title>
+  <title>Async Digital | Demos</title>
   <meta name="description" content="Live product demos from Async Digital." />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Async Digital" />
-  <meta property="og:title" content="Async Digital — Demos" />
+  <meta property="og:title" content="Async Digital | Demos" />
   <meta property="og:description" content="Live product demos from Async Digital." />
   <meta property="og:image" content="https://async-digital.com/assets/og-logo.jpg" />
   <meta property="og:url" content="https://demo.async-digital.com/" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Async Digital — Demos" />
+  <meta name="twitter:title" content="Async Digital | Demos" />
   <meta name="twitter:description" content="Live product demos from Async Digital." />
   <meta name="twitter:image" content="https://async-digital.com/assets/og-logo.jpg" />
 
@@ -24,17 +24,13 @@
   <link rel="icon" type="image/png" sizes="16x16" href="https://async-digital.com/assets/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="https://async-digital.com/assets/apple-touch-icon.png" />
 
+  <link rel="stylesheet" href="https://async-digital.com/assets/brand.css" />
+
   <style>
-    :root {
-      --text: #0b0b0c;
-      --muted: #5a5f69;
-      --bg: #ffffff;
-      --border: rgba(0,0,0,0.08);
-    }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: var(--font-sans);
       color: var(--text);
       background: var(--bg);
       display: flex;
@@ -44,27 +40,27 @@
       padding: 24px;
     }
     .container { text-align: center; max-width: 480px; }
-    h1 { font-size: 24px; font-weight: 700; margin: 0 0 8px; letter-spacing: -0.02em; }
-    p { color: var(--muted); margin: 0 0 32px; font-size: 16px; line-height: 1.55; }
+    h1 { font-size: var(--size-h2); font-weight: var(--weight-bold); margin: 0 0 8px; letter-spacing: -0.02em; }
+    p { color: var(--muted); margin: 0 0 32px; font-size: var(--size-body); line-height: var(--lh-relaxed); }
     .demos { list-style: none; padding: 0; margin: 0; }
     .demos li { margin-bottom: 12px; }
     .demos a {
       display: block;
       padding: 14px 20px;
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: 10px;
       text-decoration: none;
       color: var(--text);
-      font-weight: 500;
-      font-size: 15px;
+      font-weight: var(--weight-medium);
+      font-size: var(--size-small);
       transition: background 120ms ease, box-shadow 120ms ease;
     }
     .demos a:hover {
-      background: #f6f7f9;
+      background: var(--card);
       box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     }
     .demos a:focus-visible {
-      outline: 3px solid rgba(10,165,255,0.35);
+      outline: 3px solid color-mix(in srgb, var(--primary) 35%, transparent);
       outline-offset: 3px;
     }
     .back {
@@ -118,7 +114,7 @@
     <h1>Demos</h1>
     <p>Live product demos from Async Digital.</p>
     <ul class="demos">
-      <li><a href="/speed-to-lead/">Speed to Lead — Missed-call follow-up</a></li>
+      <li><a href="/speed-to-lead/">Speed to Lead, missed-call follow-up</a></li>
     </ul>
     <div class="back"><a href="https://async-digital.com">← async-digital.com</a></div>
   </div>
